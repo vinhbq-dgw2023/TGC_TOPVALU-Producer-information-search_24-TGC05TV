@@ -312,6 +312,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    letter-spacing: 2px;
 }
 #seisansya .tab_cnts .item .btn .btn_ttl .icon_img {
     width: 32px;
@@ -398,7 +399,7 @@
     line-height: 2;
 }
 #seisansya #sec02 .search-form .search input{width:83.7%;height:100%;border:1px solid #48332a;padding:0 30px 0;color:#a7a7a7;text-align:left;font-size:19px;}
-#seisansya #sec02 .search-form .search input::placeholder{text-align:left;font-size:19px;color:#a7a7a7;}
+#seisansya #sec02 .search-form .search input::placeholder{text-align:left;font-size:19px;color:#a3a3a3;}
 #seisansya #sec02 .search-form .search input:focus{outline:0;border:1px solid #48332a;}
 #seisansya #sec02 .search-form .search button{width:140px;background:#48332a;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;padding-top:4px;}
 #seisansya #sec02 .search-form .search button span{color:#fff;font-size:24px;margin-right:15px;line-height:1;}
@@ -456,6 +457,9 @@
 }
 
 @media screen and (max-width:768px) {
+    html {
+        font-size: 1.304vw;
+    }
     /*** Banner ***/
     .banner .banner_animation .banner_txt {
         width: 43.41%;
@@ -539,16 +543,16 @@
     }
     /*** SECTION 02 ***/
     #seisansya #sec02 {
-        padding-top: 102px;
+        padding: 10.2rem 0 19rem;
     }
     #seisansya #sec02 .sec02__title-icon{margin-bottom:15px;}
     #seisansya #sec02 .sec02__title-icon img{width:calc(45.6vw / 7.67);height:calc(50vw / 7.67);}
     #seisansya #sec02 .sec02__title-title {
-        font-size: 50px;
-        letter-spacing: 17px;
+        font-size: 5rem;
+        letter-spacing: 1.7rem;
     }
     #seisansya #sec02 .sec02__title {
-        margin-bottom: 39px;
+        margin-bottom: 3.9rem;
     }
     #seisansya .ttl_has_icon:before {
         left: 50%;
@@ -561,36 +565,32 @@
         top: 13%;
     }
     #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li .tab-ttl {
-        height: 90px;
-        font-size: 25px;
+        height: 9rem;
+        font-size: 2.5rem;
     }
     #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li .tab-ttl p {
-        padding-top: 40px;
+        padding-top: 4rem;
     }
     #seisansya .tab_cnts {
-        padding: 20px;
+        padding: 2rem;
     }
     #seisansya .tab_cnts .item .btn {
-        height: 70px;
+        height: 7rem;
         padding-left: 14%;
     }
     #seisansya .tab_cnts .item .btn .btn_ttl .icon_img {
-        margin-right: 32px;
+        margin-right: 3.2rem;
     }
-    /* #seisansya .tab_cnts .item .btn .btn_ttl .icon_img, #seisansya .tab_cnts .item .btn .btn_ttl .icon_img img{
-        width: 30px;
-        height: 50px;
-    } */
     #seisansya .tab_cnts .item .btn p {
-        font-size: 25px;
+        font-size: 2.5rem;
     }
     #seisansya #sec02 .sec02__list .item .btn:before {
-        width: 40px;
-        height: 40px;
-        background-size: 40px 40px;
+        width: 4rem;
+        height: 4rem;
+        background-size: 4rem 4rem;
     }
     #seisansya #sec02 .sec02__list .item.active .btn:before {
-        background-size: 40px 40px;
+        background-size: 4rem 4rem;
     }
     #seisansya #sec02 .list-type01__list .list-type02__item {
         width: 33.3%;
@@ -599,40 +599,118 @@
         width: 100%;
     }
     #seisansya #sec02 .search-form {
-        padding: 70px 0 40px;
+        padding: 7rem 0 4rem;
     }
     #seisansya .search-form .btn.green {
-        height: 100px;
+        height: 10rem;
     }
     #seisansya .search-form .btn.green p {
-        font-size: 36px;
-        line-height: 48px;
+        font-size: 3.6rem;
+        line-height: 4.8rem;
     }
     #seisansya #sec02 .search-form .search {
-        height: 170px;
-        padding: 42px 30px;
+        height: 17rem;
+        padding: 4.2rem 3rem;
     }
     #seisansya #sec02 .search-form .search .form__group_02 {
-        height: 90px;
+        height: 9rem;
     }
     #seisansya #sec02 .search-form .search input {
         width: 73.4%;
-        font-size: 26px;
-        padding: 0 17px 0;
+        font-size: 2.6rem;
+        padding: 0 1.7rem 0;
     }
     #seisansya #sec02 .search-form .search input::placeholder {
-        font-size: 26px;
-        font-weight: 500;
+        font-size: 2.6rem;
+        font-weight: bold;
     }
     #seisansya #sec02 .search-form .search button {
-        width: 170px;
+        width: 17rem;
+    }
+    #seisansya #sec02 .search-form .last-item .info {
+        margin-top: 3.5rem;
     }
 
     #seisansya #sec02 .search-form .last-item .info .left .text {
-        font-size: 30px;
-        line-height: 55px;
+        font-size: 3rem;
+        line-height: 5.5rem;
     }
-    
+    #seisansya #sec02 .search-form .search button span {
+        font-size: 3.6rem;
+    }
+    #seisansya #sec02 .search-form .search button img {
+        width: 3.4rem;
+        height: 3.5rem;
+    }
+    #sec02-toggle-01 .btn_ttl .icon_img img {
+        width: 3.1rem;
+        height: 5rem;
+    }
+    #sec02-toggle-02 .btn_ttl .icon_img img {
+        width: 3rem;
+        height: 4rem;
+    }
+    #sec02-toggle-03 .btn_ttl .icon_img img {
+        width: 2.1rem;
+        height: 5rem;
+    }
+    #sec02-toggle-04 .btn_ttl .icon_img img {
+        width: 3.5rem;
+        height: 3.6rem;
+    }
+    #sec02-toggle-05 .btn_ttl .icon_img img {
+        width: 3.7rem;
+        height: 3.6rem;
+    }
+
+    #seisansya #sec02 .sec02__list .item .btn:before {
+        right: 1rem;
+    }
+    #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li:nth-child(1) .tab-ttl::before {
+        background: url(./assets/group/group-4/20220805_seisansya/sec02-icon-fruit.png) no-repeat;
+        background-size: 3rem 3rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li.active:nth-child(1) .tab-ttl::before,
+    #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li:hover:nth-child(1) .tab-ttl::before {
+        background: url(./assets/group/group-4/20220805_seisansya/sec02-icon-fruit-subtract.png) no-repeat;
+        background-size: 3rem 3rem;
+    }
+    #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li:nth-child(2) .tab-ttl::before {
+        background: url(./assets/group/group-4/20220805_seisansya/sec02-icon-banana.png) no-repeat;
+        width: 4rem;
+        height: 2.8rem;
+        background-size: 4rem 2.8rem;
+    }
+    #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li.active:nth-child(2) .tab-ttl::before,
+    #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li:hover:nth-child(2) .tab-ttl::before {
+        background: url(./assets/group/group-4/20220805_seisansya/sec02-icon-banana-subtract.png) no-repeat;
+        background-size: 4rem 2.8rem;
+    }
+    #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li:nth-child(3) .tab-ttl::before {
+        background: url(./assets/group/group-4/20220805_seisansya/sec02-icon-seafood.png) no-repeat;
+        width: 4.3rem;
+        height: 2rem;
+        background-size: 4.3rem 2rem;
+    }
+    #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li.active:nth-child(3) .tab-ttl::before,
+    #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li:hover:nth-child(3) .tab-ttl::before{
+        background: url(./assets/group/group-4/20220805_seisansya/sec02-icon-seafood-subtract.png) no-repeat;
+        background-size: 4.3rem 2rem;
+    }
+    #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li:nth-child(4) .tab-ttl::before {
+        background: url(./assets/group/group-4/20220805_seisansya/sec02-icon-meat.png) no-repeat;
+        width: 5rem;
+        height: 2.6rem;
+        background-size: 5rem 2.6rem;
+    }
+    #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li.active:nth-child(4) .tab-ttl::before,
+    #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li:hover:nth-child(4) .tab-ttl::before {
+        background: url(./assets/group/group-4/20220805_seisansya/sec02-icon-meat-subtract.png) no-repeat;
+        background-size: 5rem 2.6rem;
+    }
     /*** SECTION 05 ***/
     #seisansya .pc-only{display:none!important;}
     #seisansya .sp-only{display:block!important;}
@@ -645,10 +723,13 @@
     #seisansya #sec05 .sec05 .seisansyaBxPager{padding:calc(50vw / 7.67) 0 calc(33vw / 7.67);}
     #seisansya #sec05 .sec05 .seisansyaBxPager ul li{width:33.33%;padding:0 calc(7vw / 7.67) calc(20vw / 7.67) calc(7vw / 7.67) ;}
     #seisansya #sec05 .sec05 .seisansyaBxPager ul{margin:0 calc(-10vw / 7.67);}
-
-
-
 }
+@media screen and (max-width:480px) {
+    #seisansya .tab_cnts .item .btn .btn_ttl .icon_img {
+        margin-right: .5rem;
+    }
+}
+
 
 
 @media screen and (min-width:768px) and (max-width: 1024px) {
