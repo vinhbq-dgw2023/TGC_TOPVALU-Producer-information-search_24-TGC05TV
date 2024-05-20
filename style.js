@@ -153,22 +153,16 @@ let OBJ = {};
 var option__radio;
 var access_code;
 
-// function functionSearch(){
-// option__radio = window.form1.option__radio.value;
-// access_code =  window.form1.access_code.value;
-
-// if(option__radio !== '' && access_code !== ''){
-//     if(option__radio === 'option01'){
-//             window.open(`https://www.topvalu.net/items/detail/${access_code}/`)
-//     }
-//     if(option__radio === 'option02'){
-//             window.open(`https://nogyo.jp/index.cfm?mode=search&mode1=koukai&access_code=000${access_code}`)
-//     }
-// }
-// }
 function functionSearch(){
-    window.open('https://www.topvalu.net/')
+    access_code =  window.form1.access_code.value;
+
+    if(access_code !== ''){
+        window.open(`https://www.topvalu.net/items/detail/${access_code}/`)
+    }
 }
+// function functionSearch(){
+//     window.open('https://www.topvalu.net/')
+// }
 $( "#search" ).submit(function( event ) {
     event.preventDefault();
     functionSearch();

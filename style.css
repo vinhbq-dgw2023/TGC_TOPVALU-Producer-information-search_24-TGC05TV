@@ -219,7 +219,7 @@
     margin-bottom: 49px;
 }
 #seisansya #sec02 .sec02__title-title {
-    font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, 'Yu Gothic', '游ゴシック', '游ゴシック体', 'メイリオ', Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-family: 'メイリオ','Yu Gothic Medium', '游ゴシック Medium', YuGothic, 'Yu Gothic', '游ゴシック', '游ゴシック体',  Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-size: 33px;
     letter-spacing: 10px;
     margin-bottom: 5px;
@@ -449,6 +449,156 @@
 #seisansya #sec05 .sec05 .seisansyaBxPager{padding:40px 22.5px 57px;}
 #seisansya #sec05 .sec05 .seisansyaBxPager ul{display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;}
 #seisansya #sec05 .sec05 .seisansyaBxPager ul li{width:20%;padding:0 7.5px 10px;}
+
+/** DETAIL PAGE **/
+#seisansya.detail-page #sec02 .sec02__title {
+    margin-bottom: 31px;
+}
+#seisansya.detail-page #sec02 .sec02__title-title {
+    margin-bottom: 34px;
+}
+#seisansya #sec02 .sec02__productName {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, 'Yu Gothic', '游ゴシック', '游ゴシック体', 'メイリオ', Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+}
+#seisansya.detail-page .main_tabs {
+     margin-bottom: 27px;
+}
+#seisansya.detail-page .main_tabs .box_tab.box_list_tab-01 .tab_btn li {
+    width: 32.07%;
+}
+#seisansya.detail-page .main_tabs .box_tab.box_list_tab-01 .tab_btn li .tab-ttl {
+    letter-spacing: 2px;
+}
+#seisansya.detail-page .main_tabs .box_tab.box_list_tab-01 .tab_btn li .tab-ttl::before {
+    content: none;
+}
+
+#seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-detail__contain {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-detail__contain .list-detail__item.list-item-image {
+    width: 30.6%;
+}
+#seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-detail__contain .list-detail__item.list-item-info {
+    width: 65.3%;
+}
+#seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-item-info h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin:-6px 0 7px;
+}
+#seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-item-info p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000;
+    font-weight: 500;
+}
+#seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-item-info p.note {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-item-info:not(.hasTitle) p {
+    padding-top: 50px;
+}
+
+#seisansya.detail-page .producers {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 31px;
+}
+
+#seisansya.detail-page .producers__item {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+#seisansya.detail-page .producers__item:not(:nth-child(4)) {
+    margin-right: 20px;
+}
+
+#seisansya.detail-page .producers__item:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    opacity: 1 !important;
+}
+
+#seisansya.detail-page .producers__item i {
+    position: absolute;
+    right: 9px;
+    bottom: 22px;
+}
+#seisansya.detail-page .producers__item p {
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    margin: 30px 0 46px;
+}
+
+#seisansya.detail-page .producers__item:nth-child(4) p,
+#seisansya.detail-page .producers__item:nth-child(5) p {
+    margin-top: 49px;
+} 
+
+.moreProduct {
+    padding: 0 50px;
+}
+.moreProduct__btn {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    border: solid 2px #006837;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 9px;
+}
+.moreProduct__btn::after {
+    content: "";
+    background: url(./assets/group/group-4/20220805_seisansya/icon-right-bg.png) no-repeat;
+    width: 35px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+}
+
+@media screen and  (max-width:1120px){
+    #seisansya.detail-page .producers__item {
+        width: 22.2vw;
+    }
+    #seisansya.detail-page .producers__item:not(:nth-child(4)) {
+        margin-right: 1.68vw;
+    }
+    #seisansya.detail-page .producers__item p {
+        margin: 2.67vw 0 4.1vw;
+    }
+    #seisansya.detail-page .producers__item .product-logo img{
+        width: 13.57vw;
+    }
+}
 
 @media screen and (min-width:768px) and (max-width:1000px) {
     #seisansya .main_tabs .box_tab.box_list_tab-01 .tab_btn li .tab-ttl {
@@ -723,12 +873,153 @@
     #seisansya #sec05 .sec05 .seisansyaBxPager{padding:calc(50vw / 7.67) 0 calc(33vw / 7.67);}
     #seisansya #sec05 .sec05 .seisansyaBxPager ul li{width:33.33%;padding:0 calc(7vw / 7.67) calc(20vw / 7.67) calc(7vw / 7.67) ;}
     #seisansya #sec05 .sec05 .seisansyaBxPager ul{margin:0 calc(-10vw / 7.67);}
-}
-@media screen and (max-width:480px) {
-    #seisansya .tab_cnts .item .btn .btn_ttl .icon_img {
-        margin-right: .5rem;
+
+    /** DETAIL PAGE**/
+    #seisansya.detail-page .container {
+        width: 100%;
+        padding: 0 2.4rem;
+    }
+    #seisansya #sec02 .sec02__productName {
+        font-size: 7rem;
+    }
+    #seisansya.detail-page #sec02 .sec02__title-title {
+        margin-bottom: 1.9rem;
+    }
+    #seisansya.detail-page #sec02 .sec02__title {
+        margin-bottom: 2.1rem;
+    }
+    #seisansya.detail-page .main_tabs {
+        margin-bottom: 6.9rem;
+    }
+    #seisansya.detail-page .main_tabs .box_tab.box_list_tab-01 .tab_btn li {
+        width: 22rem;
+    }
+    #seisansya.detail-page .main_tabs .box_tab.box_list_tab-01 .tab_btn li .tab-ttl {
+        padding: 0 5rem;
+    }
+    #seisansya.detail-page .main_tabs .box_tab.box_list_tab-01 .tab_btn li .tab-ttl p {
+        padding: 0;
+    }
+    #seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-detail__contain {
+        flex-direction: column-reverse;
+    }
+    #seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-detail__contain .list-detail__item.list-item-info {
+        width: 100%;
+    }
+
+    #seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-item-info {
+        margin-bottom: 9.8rem;
+    }
+
+    #seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-item-info h3 {
+        font-size: 3.5rem;
+        letter-spacing: -.05rem;
+        margin: 0 0 .6rem;
+    }
+    #seisansya.detail-page .tab_cnts {
+        padding: 2rem 2rem 4rem;
+    }
+
+    #seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-item-info p {
+        font-size: 3rem;
+        line-height: 4.4rem;
+        margin-bottom: 10;
+    }
+    #seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-item-info p.note {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    #seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-detail__contain .list-detail__item.list-item-image {
+        padding: 0 3rem;
+        width: 100%;
+    }
+    #seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-detail__contain .list-detail__item.list-item-image img {
+        width: 60rem;
+    }
+    #seisansya.detail-page .producers {
+        margin-bottom: 4.3rem;
+    }
+    #seisansya.detail-page .producers__item {
+        width: 33.75rem;
+        height: 33.75rem;
+        margin-bottom: 2.5rem;
+    }
+    #seisansya.detail-page .producers__item:not(:nth-child(4)) {
+        margin-right: 0;
+    }
+    #seisansya.detail-page .producers__item:not(:nth-child(even)) {
+        margin-right: 2.2rem;
+    }
+    #seisansya.detail-page .producers__item p {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin: 4.3rem 0 6.3rem;
+    }
+    #seisansya.detail-page .producers__item .producer-logo img {
+        width: 20.4rem;
+    }
+    #seisansya.detail-page .producers__item i {
+        right: 1.2rem;
+        bottom: 3.3rem
+    }
+    #seisansya.detail-page .producers__item i img {
+        width: 3rem;
+    }
+    #seisansya.detail-page .producers__item:nth-child(4) .producer-logo img ,
+    #seisansya.detail-page .producers__item:nth-child(5) .producer-logo img {
+        width: 19.4rem;
+    } 
+    #seisansya.detail-page .producers__item:nth-child(4) p,
+    #seisansya.detail-page .producers__item:nth-child(5) p {
+        margin: 6.6rem 0 6.4rem;
+    } 
+    #seisansya.detail-page .moreProduct {
+        padding: 0;
+    }
+    #seisansya.detail-page .moreProduct a {
+        height: 10rem;
+        border-radius: 5rem;
+        font-size: 3.6rem;
+        letter-spacing: .9rem;
+    }
+    .moreProduct__btn::after {
+        width: 3.5rem;
+        height: 3.6rem;
+        background: url(./assets/group/group-4/20220805_seisansya/icon-right-bg.png) no-repeat;
+        background-size: 3.5rem 3.6rem;
+    }
+    #seisansya.detail-page #sec02 .search-form {
+        padding-top: 6rem;
+    }
+    .moreProduct__btn::after {
+        right: 2.8rem;
     }
 }
+
+@media screen and (max-width:600px) {
+    #seisansya.detail-page .producers__item {
+        width: 33.45rem;
+        height: 33.45rem;
+    }
+}
+@media screen and (max-width:480px) {
+    #seisansya.detail .tab_cnts .item .btn .btn_ttl .icon_img {
+        margin-right: .5rem;
+    }
+    #seisansya.detail-page .producers__item {
+        width: 33rem;
+        height: 33rem;
+    }
+}
+
+@media screen and (max-width:360px) {
+    #seisansya.detail-page .producers__item {
+        width: 32rem;
+        height: 32rem;
+    }
+}
+
+
 
 
 
