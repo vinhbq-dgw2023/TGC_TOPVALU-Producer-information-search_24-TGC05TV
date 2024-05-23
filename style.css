@@ -481,6 +481,9 @@
     align-items: flex-start;
     justify-content: space-between;
 }
+#seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-detail__contain.hasTitle {
+    align-items: center;
+}
 #seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-detail__contain .list-detail__item.list-item-image {
     width: 30.6%;
 }
@@ -503,8 +506,20 @@
     font-weight: 400;
 }
 
-#seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-item-info:not(.hasTitle) p {
+/* #seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .list-item-info:not(.hasTitle) p {
     padding-top: 50px;
+} */
+
+#seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .coming-soon {
+    width: 100%;
+    text-align: center;
+}
+
+#seisansya.detail-page .main_tabs .box_tab .tab_cnts li .content .coming-soon p{
+    font-size: 30px;
+    color: #808080;
+    padding: 85px 0;
+    font-weight: 700;
 }
 
 #seisansya.detail-page .producers {
@@ -524,11 +539,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-bottom: 20px;
+    padding-top: 18px;
 }
 
-#seisansya.detail-page .producers__item:not(:nth-child(4)) {
+#seisansya.detail-page .producers__item:not(:nth-child(4n)) {
     margin-right: 20px;
 }
 
@@ -551,11 +567,6 @@
     font-weight: 700;
     margin: 30px 0 46px;
 }
-
-#seisansya.detail-page .producers__item:nth-child(4) p,
-#seisansya.detail-page .producers__item:nth-child(5) p {
-    margin-top: 49px;
-} 
 
 .moreProduct {
     padding: 0 50px;
@@ -585,11 +596,20 @@
     transform: translateY(-50%);
 }
 
+@media screen and  (min-width:768px) {
+    #seisansya.detail-page .producers__item .producer-logo.logo03 img {
+        width: 152px;
+    }
+    #seisansya.detail-page .producers__item .producer-logo.logo02 {
+        margin: 21px 0 24px;
+    }
+}
+
 @media screen and  (max-width:1120px){
     #seisansya.detail-page .producers__item {
         width: 22.2vw;
     }
-    #seisansya.detail-page .producers__item:not(:nth-child(4)) {
+    #seisansya.detail-page .producers__item:not(:nth-child(4n)) {
         margin-right: 1.68vw;
     }
     #seisansya.detail-page .producers__item p {
@@ -944,6 +964,10 @@
         height: 33.75rem;
         margin-bottom: 2.5rem;
     }
+
+    #seisansya.detail-page .producers__item .producer-logo.logo02 {
+        margin: 2.1rem 0 2.4rem;
+    }
     #seisansya.detail-page .producers__item:not(:nth-child(4)) {
         margin-right: 0;
     }
@@ -969,10 +993,10 @@
     #seisansya.detail-page .producers__item:nth-child(5) .producer-logo img {
         width: 19.4rem;
     } 
-    #seisansya.detail-page .producers__item:nth-child(4) p,
+    /* #seisansya.detail-page .producers__item:nth-child(4) p,
     #seisansya.detail-page .producers__item:nth-child(5) p {
         margin: 6.6rem 0 6.4rem;
-    } 
+    }  */
     #seisansya.detail-page .moreProduct {
         padding: 0;
     }
