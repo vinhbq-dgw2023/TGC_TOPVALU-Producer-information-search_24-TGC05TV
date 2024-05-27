@@ -168,6 +168,20 @@ $( "#search" ).submit(function( event ) {
     functionSearch();
 });
 
+function activeTab() {
+    if(window.location.hash.substring(1) !== "") {
+        document.querySelector("#sec02").scrollIntoView({ behavior: 'smooth' });
+        var tabId = window.location.hash.substring(1)
+        $(".box_tab").removeClass("active")
+        $(".tab_cnts li").removeClass("active")
+        
+        $(".box_tab.box_"+tabId).addClass("active")
+        $(".tab_cnts li.tab0"+tabId.slice(-1)).addClass("active")
+    }
+
+}
+activeTab()
+
 
 
 })(jQuery);
